@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  presentation:
+    image: node:18-slim
+    user: node
+    command: npm run dev
+    ports:
+      - 3000:3000
+    working_dir: /home/node/neural-networks-talk
+    volumes:
+      - .:/home/node/neural-networks-talk
+      - home:/home/node
+
+volumes:
+  home:

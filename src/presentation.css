@@ -1,0 +1,19 @@
+.reveal .column-layout {
+  display: flex;
+  text-align: left;
+  flex-wrap: nowrap;
+  justify-content: stretch;
+}
+
+.reveal .column-layout > * {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.reveal ul, .reveal ol {
+  margin: 0;
+}
+
+.reveal li > ol, .reveal li > ul {
+  font-size: 0.75em;
+}
